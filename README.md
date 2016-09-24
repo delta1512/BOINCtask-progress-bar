@@ -1,1 +1,3 @@
 # BOINCtask-progress-bar
+
+Usage guide coming soon...
