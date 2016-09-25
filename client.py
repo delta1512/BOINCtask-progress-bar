@@ -21,8 +21,8 @@ s.connect(('localhost', 12345))
 while True:
     for x in leds:
         wpi.digitalWrite(x, 0)
-    val = float(s.recv(1024).decode())
-    final = round(val * 10)
+    val = str(s.recv(1024).decode())
+    final = round(float(val[0:4]) * 10)
 
     ledcount = int(final)
     i = 0
